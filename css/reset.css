@@ -1,0 +1,73 @@
+/* Box sizing mais previsível */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove margens padrão */
+* {
+    margin: 0;
+}
+
+/* Permite altura total da página */
+html,
+body {
+    height: 100%;
+}
+
+/* Melhor renderização de texto */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Melhor comportamento de mídia */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remove estilos padrão de formulários */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Evita overflow de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Balanceamento de títulos (melhor legibilidade) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* Remove estilo padrão de listas quando usadas como navegação */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Scroll suave (opcional) */
+html:focus-within {
+    scroll-behavior: smooth;
+}
