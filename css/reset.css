@@ -71,3 +71,11 @@ ol[role="list"] {
 html:focus-within {
     scroll-behavior: smooth;
 }
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
