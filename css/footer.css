@@ -1,0 +1,122 @@
+.site-footer {
+    background-color: #1f1f1f;
+    color: #cccccc;
+    font-family: var(--fonte-principal);
+}
+
+/* ── Corpo principal ────────────────────────────────────── */
+.footer-body {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem 2.5rem;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ── Coluna newsletter (1ª coluna) ──────────────────────── */
+.footer-newsletter label {
+    display: block;
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.3px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    max-width: 220px;
+    padding: 0.55rem 1rem;
+    border: 1px solid #555555;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #cccccc;
+    font-size: 0.85rem;
+    font-family: var(--fonte-principal);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #777777;
+}
+
+.newsletter-form input[type="email"]:focus {
+    border-color: #7c3aed;
+}
+
+.footer-social-label {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.footer-social a:hover {
+    border-color: #7c3aed;
+    background-color: #7c3aed;
+}
+
+.footer-social img {
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+/* ── Colunas de links ───────────────────────────────────── */
+.footer-col h4 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-col ul li a {
+    font-size: 0.875rem;
+    color: #888888;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #7c3aed;
+}
+
+/* ── Barra inferior ─────────────────────────────────────── */
+.footer-bottom {
+    border-top: 1px solid #333333;
+    padding: 1.25rem 2.5rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: #666666;
+}
