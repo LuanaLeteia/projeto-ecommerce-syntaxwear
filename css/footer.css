@@ -1,38 +1,47 @@
+.site-footer *,
+.site-footer *::before,
+.site-footer *::after {
+    box-sizing: border-box;
+}
+
+.site-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .site-footer {
     background-color: #1f1f1f;
     color: #cccccc;
     font-family: var(--fonte-principal);
+    text-align: left;
 }
 
-/* ── Corpo principal ────────────────────────────────────── */
 .footer-body {
     max-width: 1360px;
     margin: 0 auto;
     padding: 3rem 2.5rem 2.5rem;
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr 1fr 0.9fr 1fr 0.8fr;
     gap: 2rem;
     align-items: start;
 }
 
-/* ── Coluna newsletter (1ª coluna) ──────────────────────── */
 .footer-newsletter label {
     display: block;
     font-size: 0.8rem;
     color: #aaaaaa;
     margin-bottom: 0.75rem;
     letter-spacing: 0.3px;
+    text-align: left;
 }
 
-.newsletter-form {
-    display: flex;
-    margin-bottom: 2rem;
-}
-
-.newsletter-form input[type="email"] {
+.newsletter-input {
+    display: block;
     width: 100%;
     max-width: 220px;
     padding: 0.55rem 1rem;
+    margin-bottom: 2rem;
     border: 1px solid #555555;
     border-radius: 25px;
     background-color: transparent;
@@ -43,19 +52,20 @@
     transition: border-color 0.3s;
 }
 
-.newsletter-form input[type="email"]::placeholder {
+.newsletter-input::placeholder {
     color: #777777;
 }
 
-.newsletter-form input[type="email"]:focus {
+.newsletter-input:focus {
     border-color: #7c3aed;
 }
 
 .footer-social-label {
+    display: block;
     font-size: 0.8rem;
     color: #aaaaaa;
     margin-bottom: 0.75rem;
-    display: block;
+    text-align: left;
 }
 
 .footer-social {
@@ -65,13 +75,13 @@
 }
 
 .footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 36px;
     height: 36px;
     border-radius: 50%;
     border: 1px solid #555555;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: border-color 0.3s, background-color 0.3s;
 }
 
@@ -85,23 +95,35 @@
     filter: brightness(0) invert(1);
 }
 
-/* ── Colunas de links ───────────────────────────────────── */
+.footer-col {
+    text-align: left;
+}
+
 .footer-col h4 {
     font-size: 0.95rem;
     font-weight: 400;
     color: #ffffff;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
+    text-align: left;
 }
 
 .footer-col ul {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    text-align: left;
+}
+
+.footer-col ul li {
+    text-align: left;
 }
 
 .footer-col ul li a {
+    display: inline-block;
     font-size: 0.875rem;
     color: #888888;
+    text-decoration: none;
+    text-align: left;
     transition: color 0.3s;
 }
 
@@ -109,7 +131,6 @@
     color: #7c3aed;
 }
 
-/* ── Barra inferior ─────────────────────────────────────── */
 .footer-bottom {
     border-top: 1px solid #333333;
     padding: 1.25rem 2.5rem;
@@ -119,4 +140,5 @@
 .footer-bottom p {
     font-size: 0.85rem;
     color: #666666;
+    margin: 0;
 }
