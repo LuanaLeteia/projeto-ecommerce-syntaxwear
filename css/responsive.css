@@ -1,0 +1,274 @@
+/* ============================================================
+   Breakpoints:
+     Tablet  → max-width: 1024px
+     Mobile  → max-width: 768px
+     Mobile S → max-width: 480px
+   ============================================================ */
+
+
+/* ── TABLET (até 1024px) ──────────────────────────────────── */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .header {
+        top: 20px;
+        width: calc(100% - 40px);
+        padding: 0.625rem 1rem;
+    }
+
+    .nav-center ul,
+    .nav-right ul {
+        gap: 1.5rem;
+    }
+
+    .nav-center a,
+    .nav-right a {
+        font-size: 1rem;
+    }
+
+    /* Hero */
+    .hero-overlay {
+        padding: 0 3rem;
+    }
+
+    /* Categories */
+    .categories-section {
+        gap: 20px;
+    }
+
+    .category-card {
+        width: 260px;
+        height: 420px;
+    }
+
+    /* Product Grid */
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 280px);
+        grid-template-areas:
+            "highlight highlight"
+            "sneaker-purple model"
+            "sneaker-color model"
+            "sneaker-white sneaker-silver";
+    }
+
+    /* Footer */
+    .footer-body {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem 1.5rem;
+    }
+
+    .footer-newsletter {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0 3rem;
+    }
+
+    .newsletter-input {
+        max-width: 260px;
+        margin-bottom: 0;
+    }
+}
+
+
+/* ── MOBILE (até 768px) ───────────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* Base */
+    main {
+        padding: 1.5rem 1.25rem 0;
+        margin-bottom: 3rem;
+    }
+
+    /* Header */
+    .header {
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+        padding: 0.75rem 1.25rem;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .nav-center {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-center ul {
+        gap: 1.25rem;
+        justify-content: center;
+    }
+
+    .nav-center a {
+        font-size: 0.95rem;
+    }
+
+    .nav-right ul {
+        gap: 1.25rem;
+    }
+
+    .nav-right a {
+        font-size: 0.95rem;
+    }
+
+    /* Esconde links de texto no nav-right, mantém só ícones */
+    .nav-right li:nth-child(1),
+    .nav-right li:nth-child(2) {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 420px;
+    }
+
+    .hero-overlay {
+        justify-content: center;
+        padding: 0 1.5rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-content .hero-title {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        width: 140px;
+        height: 44px;
+    }
+
+    /* Categories */
+    .categories-section {
+        gap: 16px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .category-card {
+        width: calc(50% - 8px);
+        height: 280px;
+    }
+
+    /* Product Grid */
+    .grid-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "highlight"
+            "sneaker-purple"
+            "sneaker-color"
+            "sneaker-white"
+            "sneaker-silver";
+        gap: 16px;
+    }
+
+    .model {
+    display: none;
+}
+
+    .grid-section .card {
+        height: 280px;
+    }
+
+    /* Footer */
+    .footer-body {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1.5rem;
+        padding: 2.5rem 1.5rem 2rem;
+    }
+
+    .footer-newsletter {
+        grid-column: 1 / -1;
+        flex-direction: column;
+    }
+
+    .newsletter-input {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer-bottom {
+        padding: 1.25rem 1.5rem;
+    }
+}
+
+
+/* ── MOBILE S (até 480px) ─────────────────────────────────── */
+@media (max-width: 480px) {
+
+    /* Header */
+    .logo img {
+        height: 26px;
+    }
+
+    .nav-center ul {
+        gap: 1rem;
+    }
+
+    .nav-center a {
+        font-size: 0.875rem;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 360px;
+    }
+
+    .hero-content .hero-title {
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    .hero-content .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+        width: 130px;
+        height: 40px;
+    }
+
+    /* Categories */
+    .category-card {
+        width: 100%;
+        height: 240px;
+    }
+
+    /* Product Grid */
+    .grid-section .card {
+        height: 240px;
+    }
+
+    /* Footer */
+    .footer-body {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+        padding: 2rem 1.25rem 1.75rem;
+    }
+
+    .footer-col {
+        border-top: 1px solid #2e2e2e;
+        padding-top: 1.25rem;
+    }
+}
