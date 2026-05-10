@@ -80,8 +80,10 @@
     justify-content: center;
     width: 36px;
     height: 36px;
+    min-width: 36px;      /* ← adicione */
     border-radius: 50%;
     border: 1px solid #555555;
+    overflow: hidden;     /* ← adicione */
     transition: border-color 0.3s, background-color 0.3s;
 }
 
@@ -91,7 +93,10 @@
 }
 
 .footer-social img {
-    height: 16px;
+    display: block;       /* ← adicione */
+    width: 16px;          /* ← adicione largura fixa */
+    height: 16px;         /* ← troque de 16px height sozinho para width+height */
+    object-fit: contain;  /* ← adicione */
     filter: brightness(0) invert(1);
 }
 
