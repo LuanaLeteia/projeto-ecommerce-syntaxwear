@@ -1,4 +1,4 @@
-# 🛒 E-commerce Silksong
+# 🛒 E-commerce SyntaxWear
 
 E-commerce fictício de tênis desenvolvido como projeto de estudo de HTML e CSS. 
 
